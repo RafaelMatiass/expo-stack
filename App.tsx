@@ -1,18 +1,23 @@
 import './global.css';
 
-import { StatusBar } from 'expo-status-bar';
+import LoginForm from 'components/LoginForm';
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View, Text, Image, SafeAreaView } from 'react-native';
 
 export default function App() {
   return (
-    <View className={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView className="flex-1 bg-white">
+      <View className="flex items-center justify-center min-h-screen">
+        <View className="">
+          <View className="flex flex-col items-center space-y-4 mb-8">
+            <Image source={require('./assets/untitled-icon.png')} className="w-24 h-24" />
+          </View>
+          <LoginForm />
+          <Text className="auth-footer text-center mt-8">
+            Copyright 2024, Untitled Rights Reserved.
+          </Text>
+        </View>
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = {
-  container: 'flex flex-1 items-center justify-center bg-white',
-};
