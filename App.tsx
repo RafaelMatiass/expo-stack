@@ -2,11 +2,11 @@ import './global.css';
 
 import LoginForm from 'components/LoginForm';
 import React from 'react';
-import { View, Text, Image, SafeAreaView } from 'react-native';
+import { Image, View, Text, SafeAreaView } from 'react-native';
 
 export default function App() {
   return (
-    <SafeAreaView className="flex-1 bg-white">
+    <SafeAreaView className="flex-1 items-center justify-center bg-white">
       <View className="flex items-center justify-center min-h-screen">
         <View className="">
           <View className="flex flex-col items-center space-y-4 mb-8">

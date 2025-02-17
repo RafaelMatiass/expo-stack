@@ -20,7 +20,7 @@ export default function LoginForm() {
         <Text className="text-base font-bold mx-2">Password</Text>
 
         <View className="flex align-items-center justify-center pl-5 w-full h-12 border-black border-2 rounded-lg">
-          <TextInput className="text-black w-ful" placeholder="Digite sua senha" />
+          <TextInput className="text-black w-full" placeholder="Digite sua senha" />
 
           {/* <TouchableOpacity
             onPress={() => setIsPasswordShown(!isPasswordShown)}
